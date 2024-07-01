@@ -1,4 +1,4 @@
-## OrgCentral Web Scrapper
+## OrgCentral Web Scraper
 
 Link to OrgCentral home: https://orgcentral.psu.edu/organizations
 
