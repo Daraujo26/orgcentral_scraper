@@ -1,8 +1,6 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-def getLink(link: str):
-    driver = webdriver.Firefox()
+def getLink(driver, link: str):
     driver.get(link)
     assert "Penn State" in driver.title
 
@@ -32,6 +30,4 @@ def getLink(link: str):
     except:
         officers = ''
 
-    # scraper takes the letter in the officers profile pic so you have to filter it out
-    driver.quit()
     return [title, bio, contact, addtl, officers, link]
